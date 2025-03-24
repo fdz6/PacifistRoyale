@@ -31,7 +31,7 @@ namespace ClashRoyale.Logic.Battle
         {
             IsFriendly = isFriendly;
             Arena = arena;
-            
+
             if (arena >= 8)
             {
                 Location = Csv.Tables.Get(Csv.Files.Locations)
@@ -43,11 +43,15 @@ namespace ClashRoyale.Logic.Battle
                            .GetData<Locations>(Csv.Tables.Get(Csv.Files.Arenas)
                                 .GetDataWithInstanceId<Arenas>(arena - 1).PvpLocation).GetInstanceId()+1;
             }
-            
+            if(arena == 10) {
+                Location = Csv.Tables.Get(Csv.Files.Locations).GetData<Locations>(Csv.Tables.Get(Csv.Files.Arenas).GetDataWithInstanceId<Arenas>(10).PvpLocation).GetInstanceId()-2;
+
+            }
             Replay.Battle.Location = 15000000 + Location;
 
             BattleTimer.Elapsed += Tick;
         }
+
 
         /// <summary>
         ///     2v2 Battle
