@@ -457,13 +457,22 @@ namespace ClashRoyale.Logic
                 packet.WriteBoolean(Home.NameSet > 1); // NameSetByUser
             }
 
-            // Profile
+             // Profile
             {
                 if (Home.Arena.CurrentArena >= 5)
                 {
+                        if(Home.Arena.CurrentArena == 10) {
+                                packet.WriteVInt(8);
 
-                    packet.WriteVInt(Home.Arena.CurrentArena + 2); // Arena
+                        } else {
+                                if(Home.Arena.CurrentArena > 10) {
+                                        packet.WriteVInt(Home.Arena.ArenaData(Home.Arena.CurrentArena).Arena + 1);
 
+                                } else {
+                                        packet.WriteVInt(Home.Arena.ArenaData(Home.Arena.CurrentArena).Arena + 2);
+
+                                }
+                        }
 
                 }
                 else
@@ -473,11 +482,11 @@ namespace ClashRoyale.Logic
 
                 }
 
-                packet.WriteVInt(Home.Arena.Trophies); // Trophies 
+                packet.WriteVInt(Home.Arena.Trophies); // Trophies
 
                 packet.WriteVInt(0);
                 packet.WriteVInt(0);
-                packet.WriteVInt(100); // Legendary Trophies
+                packet.WriteVInt(1337); // Legendary Trophies
 
                 packet.WriteVInt(0); // Current Season Trophies
                 packet.WriteVInt(0);
@@ -487,6 +496,7 @@ namespace ClashRoyale.Logic
                 packet.WriteVInt(0); // Rank
                 packet.WriteVInt(100); // Trophies
             }
+
 
             // League
             packet.WriteVInt(100); // Current Trophies
