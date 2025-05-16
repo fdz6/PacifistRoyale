@@ -77,5 +77,5 @@ As of 16/05/2025 i decided to stop supporting ZrdRoyale<br>
 Why?<br>
 The reason is simple, my telegram turned into spam app.<br>
 I understand that not everyone has coding knowledge but<br>
-getting dumb(for me) questions because frustrating for me<br>
+getting dumb(for me) questions became frustrating for me<br>
 maybe some day i will create tutorial or just faq in here<br>
