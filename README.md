@@ -73,4 +73,9 @@ It should look like this:
 ```git pull && dotnet publish "ClashRoyale.Battles.csproj" -c Release -o app && dotnet ClashRoyale.Battles/bin/Release/netcoreapp3.1/ClashRoyale.Battles.dll```
 
 ## Need help?
-Contact me on Telegram (https://t.me/TZordon) or open an issue.
+As of 16/05/2025 i decided to stop supporting ZrdRoyale<br>
+Why?<br>
+The reason is simple, my telegram turned into spam app.<br>
+I understand that not everyone has coding knowledge but<br>
+getting dumb(for me) questions because frustrating for me<br>
+maybe some day i will create tutorial or just faq in here<br>
