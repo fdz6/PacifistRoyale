@@ -31,7 +31,7 @@ Remake README.md
 ## Battles
 The server supports battles, for those a patched client is neccessary.
 
-[See the wiki for a tutorial](https://github.com/Erder00/ZrdRoyale/wiki)
+[See the wiki for a tutorial](https://github.com/retroroyale/ClashRoyale/wiki)
 
 ## How to start
 
@@ -41,8 +41,8 @@ The server supports battles, for those a patched client is neccessary.
 
 for Ubuntu use these commands to set it up:
 ```
-mkdir ClashRoyale
-git clone https://github.com/Zordon1337/ZrdRoyale.git && cd ClashRoyale/src/ClashRoyale
+mkdir PacifistRoyale
+git clone https://github.com/fdz6/PacifistRoyale.git && cd PacifistRoyale/src/ClashRoyale
 
 dotnet publish
 ```
@@ -63,7 +63,7 @@ It should look like this:
 ```dotnet bin/Release/net8.0/ClashRoyale.dll```
 
 ###### Battle Server:
-```dotnet ClashRoyale.Battles/bin/Release/netcoreapp3.1/ClashRoyale.Battles.dll``` (from /ZrdRoyale/src/)
+```dotnet ClashRoyale.Battles/bin/Release/netcoreapp3.1/ClashRoyale.Battles.dll``` (from /PacifistRoyale/src/)
 
 #### Update the server:
 ###### Main Server:
@@ -71,11 +71,3 @@ It should look like this:
 
 ###### Battle Server:
 ```git pull && dotnet publish "ClashRoyale.Battles.csproj" -c Release -o app && dotnet ClashRoyale.Battles/bin/Release/netcoreapp3.1/ClashRoyale.Battles.dll```
-
-## Need help?
-As of 16/05/2025 i decided to stop supporting ZrdRoyale<br>
-Why?<br>
-The reason is simple, my telegram turned into spam app.<br>
-I understand that not everyone has coding knowledge but<br>
-getting dumb(for me) questions became frustrating for me<br>
-maybe some day i will create tutorial or just faq in here<br>
